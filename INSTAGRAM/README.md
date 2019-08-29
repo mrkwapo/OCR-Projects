@@ -188,8 +188,6 @@ In order to console log the results we need to await for the words() and then st
 
 *$ node filename.js*
 
-It will take a wile for the promise to return the results. And when the results return, they will be a mess but notice all the data is in an array.
+It will take a while for the promise to return the results. And when the results return, they will be a mess but notice all the data is delivered in an array. You can use the .split() method to extract specific text from the results.
 
-**Step 10**
 
-**Step 11**
