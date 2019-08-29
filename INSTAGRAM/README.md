@@ -5,7 +5,7 @@ This program will iterate within a folder of images and extract text from each i
 
 **Step 1: Initiate Git** in the terminal, type and enter:
 
-git init
+$ git init
 
 **Step 2: Clone repository** in the terminal, type and enter:
 
@@ -13,17 +13,18 @@ git clone https://github.com/mrkwapo/OCR-Projects.git
 
 **Step 3: Initiate NPM in terminal**
 
-npm init
+$ npm init
 
 
 
 **Step 4: Install dependencies** in the terminal, type and enter:
 
-npm install
+$ npm install
 
 
 **TECHNOLOGIES USED:**
 
+*INSTALL:*
 **Okrabyte** is a javascript Optical Character Recognition(OCR) library for with Node.js. It scans images for text characters. 
 *See documentation:* https://www.npmjs.com/package/okrabyte .
 
@@ -32,6 +33,12 @@ npm install
 
 **Node.js** is an open-source, cross-platform, JavaScript run-time environment that executes JavaScript code outside of a browser.
   *See documentation and download:* https://nodejs.org/en/ 
+  
+  
+  *GLOSSARY:*
+  
+  fs : native file system that comes with Node.js which enables read and write operations on your working file system that hosts the node environment
+
 
 
 **STEP BY STEP TUTORIAL**
@@ -39,3 +46,25 @@ npm install
 Inside the root directory, create a folder and name it "images". Save 10 screenshots of instagram user profile pages and store them inside the folder named "images". (To avoid complications, avoid using profiles with words in their profile photos.)
 
 
+**Step 1** Initiate Node Package Manager**
+
+$ npm init
+
+**Step 2**Ins
+
+$ npm 
+
+**Step 3** Create a js file in the root directory (not inside the images folder) and type the following:
+
+const fs = require("fs");  
+
+
+
+
+**Step 4**
+
+**Step 5**
+
+**Step 6**
+
+**Step 7**
