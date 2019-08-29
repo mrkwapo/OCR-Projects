@@ -72,23 +72,46 @@ const okrabyte = require("okrabyte");
 
 
 **Step 4**
-After bringing in fs and okrabyte, we will need to use an asynchronous function. Because the action *readdir (which means read directory)* takes time to respond instead of immediately we will be using async/await functions to handle promises which will return our results. *To learn about asynchronous functions, promises and callbacks, see:  https://javascript.info/async*
+After bringing in fs and okrabyte, we will need to use an asynchronous function. Because the action *readdir (which means read directory)* takes time to respond instead of immediately we will be using async/await functions to handle promises which will return our results. The first argument tells the readdir function where to look for the files. We will use a callback function (err, files) as a second argument to throw an error or return files in the directory designated in arguement one. If there is an error it will reject any errors. Otherwise, we will resolve the files. *To learn about asynchronous functions, promises and callbacks, see:  https://javascript.info/async*
 
 const fs = require("fs");  
 const okrabyte = require("okrabyte");
 
 **(async() => {
-
-
-
-
+  const files = await new Promise((resolve, reject) => {
+    fs.readdir('images/', (err, files) => {
+      if(err){
+        reject(err);
+      }else {
+        resolve(files);
+      }
+    });
+  });
+  console.log(files);
 
 **})()** 
 
 (this is the set up of an E6 self executing arrow function. See here for more information: )
 
-
 **Step 5**
+To check the results stored in the variable "files", we console log, then run the program in the terminal with the following command:
+
+*$ node filename.js
+
+Your results should show up in an array.
+
+        Example:
+        [ 'photo1.png',
+          'photo10.png',
+          'photo2.png',
+          'photo3.png',
+          'photo4.png',
+          'photo5.png',
+          'photo6.png',
+          'photo7.png',
+          'photo8.png',
+          'photo9.png' ]
+
 
 **Step 6**
 
