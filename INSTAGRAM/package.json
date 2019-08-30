@@ -1,5 +1,5 @@
 {
-  "name": "orcscraper",
+  "name": "ocrimagetotext",
   "version": "1.0.0",
   "description": "Using Optical Character Recognition software called Okrabyte to scan images for text",
   "main": "instabot.js",
@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nate Kwapo",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "okrabyte": "^0.1.1"
+  }
 }
