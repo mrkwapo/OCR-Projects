@@ -1,4 +1,4 @@
-This program was created 8/28/2019  to iterate within a folder of images and extract text from each image and create document of Instagram users.
+This program was created 8/28/2019  to iterate within a folder of images and extract text from each image and store a list of Instagram users in a document
 
 8/29/2019 Because the inaccuracy of the OCR technology I will have to either use a different set of images to demonstrate or use different ORC technology with better accuracy. 
 
